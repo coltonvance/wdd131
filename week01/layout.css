@@ -1,25 +1,87 @@
-.ex5 .parent {
-    display: grid;
-    grid-template: auto 1fr auto / auto 1fr auto;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.ex5 header {
-    padding: 2rem;
-    grid-column: 1 / 4;
+/* General page styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
 }
 
-.ex5 .left-side {
-    grid-column: 1 / 2;
+/* Header styling */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
 
-.ex5 main {
-    grid-column: 2 / 3;
+header h1 {
+    margin: 0;
 }
 
-.ex5 .right-side {
-    grid-column: 3 / 4;
+/* Navigation styling */
+nav {
+    background-color: #444;
+    padding: 10px 0;
 }
 
-.ex5 footer {
-    grid-column: 1 / 4;
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Container for main and aside */
+.container {
+    display: flex;
+    margin: 20px;
+}
+
+/* Main content styling */
+main {
+    flex: 3;
+    padding: 20px;
+    background-color: #f4f4f4;
+    margin-right: 20px;
+}
+
+main h2 {
+    margin-top: 0;
+}
+
+/* Aside content styling */
+aside {
+    flex: 1;
+    padding: 20px;
+    background-color: #ddd;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
